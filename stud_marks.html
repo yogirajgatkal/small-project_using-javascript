@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Math Marks:<input type="number" id="s1" placeholder="Enter math marks">
+    <br><br>
+    English Marks:<input type="number" id="s2" placeholder="Enter english marks">
+    <br><br>
+    Science Marks:<input type="number" id="s3" placeholder="Enter science marks">
+    <br><br>
+    Hindu Marks:<input type=" number" id="s4" placeholder="Enter hindi marks">
+    <br><br>
+
+    
+    Total Marks:<input type="number" id="tot">   <button onclick="tot()">total</button>
+    <br><br>
+    Avg:<input type="number" id="avg">  <button onclick="avg()">avg</button>
+
+    <script>
+
+        const tot=()=>{
+        let sub1=parseInt(document.getElementById("s1").value);
+        let sub2=parseInt(document.getElementById("s2").value);
+        let sub3=parseInt(document.getElementById("s3").value);
+        let sub4=parseInt(document.getElementById("s4").value);
+
+        document.getElementById("tot").value=sub1+sub2+sub3+sub4;
+        }
+
+        const avg=()=>
+        {
+        let sub1=parseInt(document.getElementById("s1").value);
+        let sub2=parseInt(document.getElementById("s2").value);
+        let sub3=parseInt(document.getElementById("s3").value);
+        let sub4=parseInt(document.getElementById("s4").value);
+        let total=sub1+sub2+sub3+sub4;
+        
+        document.getElementById("avg").value=total/4;
+        }
+        
+    </script>
+    
+</body>
+</html>

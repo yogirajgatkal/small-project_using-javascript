@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #85a4d8, #47516d);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.Calculator {
+    width: 80%;
+    max-width: 600px;
+    margin: 10% auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.Calculator span {
+    color: #f39c12;
+}
+
+.Calculator h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+.input_box {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 192, 203, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.input_box input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.input_box input::-webkit-calendar-picker-indicator {
+     /* Match the background color of the button or adjust as needed */
+    background-position: center;
+    background-size: 70%; /* Adjust the size as needed */
+    cursor: pointer;
+    opacity: 1; /* Ensure the icon is fully visible */
+}
+
+.input_box button {
+    background: #3498db;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input_box input::-webkit-calendar-picker-indicator {
+    background-position: calc(100% - -7px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#result span {
+    color: #f39c12;
+}

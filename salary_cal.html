@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="annualsal" placeholder="Enter your annual_salary">
+    <input type="number" id="monthlysal" >
+    <button onclick="cal()">calculate salary</button>
+
+    <script>
+        const cal=()=>
+        {
+            let x=parseInt(document.getElementById("annualsal").value)
+            document.getElementById("monthlysal").value=x/12;//take the output in second input box
+        }
+    </script>
+</body>
+</html>

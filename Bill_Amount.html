@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pname" placeholder="Enter product name">
+    <br><br>
+    <input type="number" id="pcost" placeholder="Enter product cost">
+    <br><br>
+    <input type="number" id="pquan" placeholder="Enter product Quantity">
+    <br><br>
+    <button onclick="cal()">cal</button>
+    <br><br>
+    <input type="number"  id="fcost">
+
+    <script>
+        const cal=()=>
+        {
+            let x=parseInt(document.getElementById("pcost").value);
+            let y=parseInt(document.getElementById("pquan").value);
+            document.getElementById("fcost").value=x*y;
+        }
+    </script>
+</body>
+</html>
